@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Login or Register";
+}
+
+<div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12">
+        @await Html.PartialAsync("_Register")
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12">
+        @await Html.PartialAsync("_Login")
+    </div>
+</div>

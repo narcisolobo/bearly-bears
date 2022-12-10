@@ -1,0 +1,36 @@
+@model User
+<div class="card mt-3 bg-dark-100 text-light shadow">
+    <h4 class="card-header">Register</h4>
+    <div class="card-body">
+        <form asp-action="Register" asp-controller="Users" method="post">
+            <div class="mb-3">
+                <label asp-for="FirstName" class="form-label">First Name:</label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="form-text text-primary"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="LastName" class="form-label">Last Name:</label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="form-text text-primary"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label">Email:</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="form-text text-primary"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label">Password:</label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="form-text text-primary"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ConfirmPassword" class="form-label">Confirm Password:</label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="form-text text-primary"></span>
+            </div>
+            <div class="d-flex justify-content-end">
+                <input type="submit" value="Register" class="btn btn-outline-primary">
+            </div>
+        </form>
+    </div>
+</div>

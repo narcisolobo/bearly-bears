@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "All Posts";
+}
+@model WallViewModel
+
+<div class="card mt-3 bg-dark-100 text-light">
+    <h3 class="card-header">Post a Message:</h3>
+    <div class="card-body">
+        @await Html.PartialAsync("_NewPost", Model.Post)
+    </div>
+</div>
+<div class="card mt-3 bg-dark-100 text-light">
+    <h5 class="card-header">All Messages:</h5>
+    @* start message *@
+    @foreach (Post post in Model.Posts.OrderByDescending(p => p.CreatedAt))
+    {
+        @await Html.PartialAsync("_OnePost", post)
+    }
+    @* end message *@
+</div>

@@ -1,0 +1,18 @@
+@model Comment
+
+<form
+    asp-action="CreateComment"
+    asp-controller="Posts"
+    asp-route-postId="@Model.PostId"
+    method="post"
+>
+    <input name="UserId" type="hidden" value="@ViewBag.userId">
+    <input name="PostId" type="hidden" value="@Model.PostId">
+    <textarea name="CommentContent" class="form-control"></textarea>
+    <span asp-validation-for="CommentContent" class="form-text text-primary"></span>
+    <div class="d-flex justify-content-end mt-3">
+        <button type="submit" class="btn btn-sm btn-outline-primary">
+            <small>COMMENT</small>
+        </button>
+    </div>
+</form>

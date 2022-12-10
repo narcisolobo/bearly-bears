@@ -1,0 +1,34 @@
+@model Comment
+
+<div class="card bg-dark-100 text-light mb-3">
+    @if (Model.User is not null)
+    {
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <small class="text-primary">
+                @Model.User.FirstName @Model.User.LastName.Substring(0, 1) - @Model.CreatedAt.ToString("D")
+            </small>
+            <div class="btn-group">
+                @if (Model.User.UserId == ViewBag.userId)
+                    {
+                        <button type="button" class="btn btn-sm btn-link link-primary">
+                            <i class="bi bi-pencil-fill"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-link link-primary">
+                            <i class="bi bi-trash-fill"></i>
+                        </button>
+                    }
+                    else
+                    {
+                        <button type="button" class="btn btn-sm btn-link link-primary">
+                            <i class="bi bi-heart-fill"></i>
+                        </button>
+                    }
+            </div>
+        </div>
+    }
+    <div class="card-body">
+        <p class="mb-0">
+            <small>@Model.CommentContent</small>
+        </p>
+    </div>
+</div>

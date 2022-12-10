@@ -1,0 +1,55 @@
+@model Post
+
+<div class="card-body">
+    <div class="card bg-dark-200 text-light">
+        @if (@Model.User is not null)
+        {
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span class="text-primary">
+                    @Model.User.FirstName @Model.User.LastName.Substring(0, 1) - @Model.CreatedAt.ToString("D")
+                </span>
+                <div class="btn-group">
+                    @if (Model.User.UserId == ViewBag.userId)
+                    {
+                        <button type="button" class="btn btn-sm btn-link link-primary">
+                            <i class="bi bi-pencil-fill"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-link link-primary">
+                            <i class="bi bi-trash-fill"></i>
+                        </button>
+                    }
+                    else
+                    {
+                        <button type="button" class="btn btn-sm btn-link link-primary">
+                            <i class="bi bi-heart-fill"></i>
+                        </button>
+                    }
+                </div>
+            </div>
+        }
+        <div class="card-body pb-0">
+            <p>@Model.Content</p>
+
+            @* start comments *@
+            @foreach (Comment comment in Model.Comments)
+            {
+                @await Html.PartialAsync("_OneComment", comment)
+            }
+            @* end comments *@
+
+            @* start comment form *@
+            <div class="card bg-dark-100 text-light mb-3">
+                <small class="card-header text-primary">Post a Comment:</small>
+                <div class="card-body">
+                    @{
+                        Comment emptyComment = new Comment();
+                        emptyComment.PostId = Model.PostId;
+                    }
+                    @await Html.PartialAsync("_NewComment", emptyComment)
+                </div>
+            </div>
+            @* end comment form *@
+
+        </div>
+    </div>
+</div>
