@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TheWall")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5733b5f714c87858f80d42ba56103c2be5593125")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheWall")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheWall")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

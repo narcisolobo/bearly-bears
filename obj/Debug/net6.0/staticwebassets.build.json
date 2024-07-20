@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EdfKmpFsU/w0SKnpM/lNiiq9VlfqAMqpxgTstpy4NZk=",
+  "Hash": "xCO50IZIhWZ/ENib7M5V3XA0I2T6isCxQH4PTP2FffA=",
   "Source": "TheWall",
   "BasePath": "_content/TheWall",
   "Mode": "Default",
@@ -32,23 +32,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/.DS_Store"
-    },
-    {
-      "Identity": "/Users/instructornarciso/Documents/coding-dojo/c-sharp/december-22/TheWall/wwwroot/css/site.css",
-      "SourceId": "TheWall",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/instructornarciso/Documents/coding-dojo/c-sharp/december-22/TheWall/wwwroot/",
-      "BasePath": "_content/TheWall",
-      "RelativePath": "css/site.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
       "Identity": "/Users/instructornarciso/Documents/coding-dojo/c-sharp/december-22/TheWall/wwwroot/css/style.css",
@@ -117,23 +100,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/bootstrap.min.js"
-    },
-    {
-      "Identity": "/Users/instructornarciso/Documents/coding-dojo/c-sharp/december-22/TheWall/wwwroot/js/site.js",
-      "SourceId": "TheWall",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/instructornarciso/Documents/coding-dojo/c-sharp/december-22/TheWall/wwwroot/",
-      "BasePath": "_content/TheWall",
-      "RelativePath": "js/site.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/site.js"
     },
     {
       "Identity": "/Users/instructornarciso/Documents/coding-dojo/c-sharp/december-22/TheWall/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",

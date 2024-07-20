@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hOHJTQIRp9QC7d1d3VTUwyfiCjCvfwxMNm65qRHX+pLsnWVm/Z6tnuetBACZzoR4/nibc9kqPkHN8GRd6suhKQ==",
+  "dgSpecHash": "3LjXMJfJ//g=",
   "success": true,
   "projectFilePath": "/Users/instructornarciso/Documents/coding-dojo/c-sharp/december-22/TheWall/TheWall.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,10 @@
     "/Users/instructornarciso/.nuget/packages/pomelo.entityframeworkcore.mysql/6.0.1/pomelo.entityframeworkcore.mysql.6.0.1.nupkg.sha512",
     "/Users/instructornarciso/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/Users/instructornarciso/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
-    "/Users/instructornarciso/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "/Users/instructornarciso/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/instructornarciso/.nuget/packages/microsoft.netcore.app.ref/6.0.31/microsoft.netcore.app.ref.6.0.31.nupkg.sha512",
+    "/Users/instructornarciso/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.31/microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512",
+    "/Users/instructornarciso/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.31/microsoft.netcore.app.host.osx-arm64.6.0.31.nupkg.sha512"
   ],
   "logs": []
 }
